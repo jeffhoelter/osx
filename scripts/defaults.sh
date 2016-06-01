@@ -25,8 +25,8 @@ defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 printf "System - Disable window resume system-wide\n"
 defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 
-printf "System - Disable auto-correct\n"
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+#printf "System - Disable auto-correct\n"
+#defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 printf "System - Disable smart quotes (not useful when writing code)\n"
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
@@ -34,18 +34,18 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 printf "System - Disable smart dashes (not useful when writing code)\n"
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
-printf "System - Require password immediately after sleep or screen saver begins\n"
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
+#printf "System - Require password immediately after sleep or screen saver begins\n"
+#defaults write com.apple.screensaver askForPassword -int 1
+#defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 printf "System - Avoid creating .DS_Store files on network volumes\n"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-printf "System - Automatically restart if system freezes\n"
-systemsetup -setrestartfreeze on
+#printf "System - Automatically restart if system freezes\n"
+#systemsetup -setrestartfreeze on
 
-printf "System - Disable software updates\n"
-sudo softwareupdate --schedule off
+#printf "System - Disable software updates\n"
+#sudo softwareupdate --schedule off
 
 printf "Keyboard - Automatically illuminate built-in MacBook keyboard in low light\n"
 defaults write com.apple.BezelServices kDim -bool true
@@ -73,24 +73,24 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-printf "Trackpad - Use CONTROL (^) with scroll to zoom\n"
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+#printf "Trackpad - Use CONTROL (^) with scroll to zoom\n"
+#defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+#defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 
-printf "Trackpad - Follow keyboard focus while zoomed in\n"
-defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+#printf "Trackpad - Follow keyboard focus while zoomed in\n"
+#defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 printf "Bluetooth - Increase sound quality for headphones/headsets\n"
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
-printf "Menu Bar - Show only Bluetooth and Airport\n"
-for domain in $HOME/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-  defaults write "${domain}" dontAutoLoad -array "/System/Library/CoreServices/Menu Extras/TimeMachine.menu"
-done
+#printf "Menu Bar - Show only Bluetooth and Airport\n"
+#for domain in $HOME/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+#  defaults write "${domain}" dontAutoLoad -array "/System/Library/CoreServices/Menu Extras/TimeMachine.menu"
+#done
 
-defaults write com.apple.systemuiserver menuExtras -array \
-  "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-  "/System/Library/CoreServices/Menu Extras/AirPort.menu"
+#defaults write com.apple.systemuiserver menuExtras -array \
+#  "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+#  "/System/Library/CoreServices/Menu Extras/AirPort.menu"
 
 printf "Dock - Remove all default app icons\n"
 defaults write com.apple.dock persistent-apps -array
@@ -131,8 +131,8 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 printf "Finder - Use list view in all Finder windows\n"
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
-printf "Finder - Allow quitting via COMMAND+Q -- Doing so will also hide desktop icons\n"
-defaults write com.apple.finder QuitMenuItem -bool true
+#printf "Finder - Allow quitting via COMMAND+Q -- Doing so will also hide desktop icons\n"
+#defaults write com.apple.finder QuitMenuItem -bool true
 
 printf "Finder - Disable the warning before emptying the Trash\n"
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
@@ -140,8 +140,8 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 printf "Finder - Allow text selection in Quick Look\n"
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
-printf "iOS Simulator - Symlink the iOS Simulator application\n"
-sudo ln -sf "/Applications/Xcode.app/Contents/Applications/iPhone Simulator.app" "/Applications/iOS Simulator.app"
+#printf "iOS Simulator - Symlink the iOS Simulator application\n"
+#sudo ln -sf "/Applications/Xcode.app/Contents/Applications/iPhone Simulator.app" "/Applications/iOS Simulator.app"
 
 printf "Safari - Set home page to 'about:blank' for faster loading\n"
 defaults write com.apple.Safari HomePage -string "about:blank"
@@ -200,6 +200,9 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 
 printf "Time Machine - Prevent prompting to use new hard drives as backup volume\n"
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+printf "Time Machine - Disabling local backups\n"
+sudo tmutil disablelocal
 
 printf "Printer - Expand print panel by default\n"
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
