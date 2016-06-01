@@ -55,6 +55,9 @@ brew install lftp
 # ack
 brew install ack
 
+# zsh
+brew install zsh
+
 # asciinema
 # brew install asciinema
 

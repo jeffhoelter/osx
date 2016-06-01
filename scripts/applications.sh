@@ -8,11 +8,17 @@
 install_dmg_app "$DROPBOX_APP_URL" "Dropbox Installer" "$DROPBOX_APP_NAME"
 
 # Evernote
+install_dmg_app "$EVERNOTE_APP_URL" "Evernote" "$EVERNOTE_APP_NAME"
 
-#evernote
-#google drive
-#quitter
+# Google Drive
+install_dmg_app "$GOOGLEDRIVE_APP_URL" "Install Google Drive" "$GOOGLEDRIVE_APP_NAME"
+
+
 #little snitch
+# https://www.obdev.at/downloads/littlesnitch/LittleSnitch-3.6.3.dmg
+# install_dmg_pkg "$VIRTUAL_BOX_APP_URL" "VirtualBox" "$VIRTUAL_BOX_APP_NAME"
+
+#quitter
 
 # Knox
 # install_zip_app "$KNOX_APP_URL" "$KNOX_APP_NAME"
