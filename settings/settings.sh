@@ -33,6 +33,11 @@ export EVERNOTE_APP_URL="https://evernote.com/download/get.php?file=EvernoteMac"
 export GOOGLEDRIVE_APP_NAME=Google Drive.app
 export GOOGLEDRIVE_APP_URL="https://dl.google.com/drive/installgoogledrive.dmg"
 
+export LITTLESNITCH_APP_NAME=Little Snitch Installer.app
+export LITTLESNITCH_APP_URL="https://www.obdev.at/downloads/littlesnitch/LittleSnitch-3.6.3.dmg"
+
+
+
 export KNOX_APP_NAME=Knox.app
 export KNOX_APP_URL="https://d13itkw33a7sus.cloudfront.net/dist/K/Knox-2.3.2.zip"
 
@@ -241,3 +246,5 @@ export KSDIFF_APP_URL="https://updates.blackpixel.com/latest?app=ksdiff"
 
 export HAND_BRAKE_APP_NAME="HandBrake.app"
 export HAND_BRAKE_APP_URL="http://handbrake.fr/rotation.php?file=HandBrake-0.10.5-MacOSX.6_GUI_x86_64.dmg"
+
+

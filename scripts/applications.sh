@@ -11,12 +11,12 @@ install_dmg_app "$DROPBOX_APP_URL" "Dropbox Installer" "$DROPBOX_APP_NAME"
 install_dmg_app "$EVERNOTE_APP_URL" "Evernote" "$EVERNOTE_APP_NAME"
 
 # Google Drive
-install_dmg_app "$GOOGLEDRIVE_APP_URL" "Install Google Drive" "$GOOGLEDRIVE_APP_NAME"
+install_dmg_pkg "$GOOGLEDRIVE_APP_URL" "Install Google Drive" "$GOOGLEDRIVE_APP_NAME"
 
+# moom
 
 #little snitch
-# https://www.obdev.at/downloads/littlesnitch/LittleSnitch-3.6.3.dmg
-# install_dmg_pkg "$VIRTUAL_BOX_APP_URL" "VirtualBox" "$VIRTUAL_BOX_APP_NAME"
+install_dmg_pkg "$LITTLESNITCH_APP_URL" "Little Snitch 3.6.3" "$LITTLESNITCH_APP_NAME"
 
 #quitter
 
@@ -108,7 +108,7 @@ install_dmg_app "$SONOS_APP_URL" "Sonos" "$SONOS_APP_NAME"
 # install_zip_app "$APP_CLEANER_APP_URL" "$APP_CLEANER_APP_NAME"
 
 # Hazel
-install_dmg_app "$HAZEL_APP_URL" "Hazel" "$HAZEL_APP_NAME"
+install_dmg_pkg "$HAZEL_APP_URL" "Hazel" "$HAZEL_APP_NAME"
 
 # Trailer
 # install_zip_app "$TRAILER_APP_URL" "$TRAILER_APP_NAME"
