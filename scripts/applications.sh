@@ -21,7 +21,8 @@ install_dmg_pkg "$LITTLESNITCH_APP_URL" "Little Snitch 3.6.3" "$LITTLESNITCH_APP
 #quitter
 #screens
 #mountain
-
+#spectacle
+#omnifocus
 
 # Knox
 # install_zip_app "$KNOX_APP_URL" "$KNOX_APP_NAME"
