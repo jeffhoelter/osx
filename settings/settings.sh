@@ -30,10 +30,10 @@ export DROPBOX_APP_URL="https://www.dropbox.com/download?src=index&plat=mac"
 export EVERNOTE_APP_NAME=Evernote.app
 export EVERNOTE_APP_URL="https://evernote.com/download/get.php?file=EvernoteMac"
 
-export GOOGLEDRIVE_APP_NAME=Google Drive.app
+export GOOGLEDRIVE_APP_NAME="Google Drive.app"
 export GOOGLEDRIVE_APP_URL="https://dl.google.com/drive/installgoogledrive.dmg"
 
-export LITTLESNITCH_APP_NAME=Little Snitch Installer.app
+export LITTLESNITCH_APP_NAME="Little Snitch Installer.app"
 export LITTLESNITCH_APP_URL="https://www.obdev.at/downloads/littlesnitch/LittleSnitch-3.6.3.dmg"
 
 
