@@ -34,6 +34,9 @@ fi
 # GPG
 # brew install gpg
 
+# exiftool
+brew install exiftool
+
 # GPG Agent
 # brew install gpg-agent
 
